@@ -1,13 +1,18 @@
 #include <cstdio>
-#include<tuple>
+#include <stack>
+#include <vector>
+using std::stack;
+using std::vector;
 
-class A
-{
+class A{
     private:
-        int b;
-        int c;
+        stack<char>st;
     public:
-    A();
-    void road_in(int,int);
-    int road_out();
+        //constructor
+        A();
+        //loads character vector to be unloaded in st
+        void load(vector<char>);
+        //prints all contents of stack
+        void st_print();
+        void vec_print(vector<char>);
 };
