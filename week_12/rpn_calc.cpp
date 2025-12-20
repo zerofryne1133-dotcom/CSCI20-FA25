@@ -12,7 +12,7 @@ int div_rpn(int a, int b){//divides the last two elements in the stack
     return a / b;}
 int mod_rpn(int a, int b){//finds the remainder after dividing the last two elements in the stack
     return a % b;}
-stack<int> evaluate(stack<int>);
+
 stack<int> evaluate(stack<int>st){
     int x = st.top();
     st.pop();
